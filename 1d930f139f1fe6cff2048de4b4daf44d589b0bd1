@@ -1,0 +1,41 @@
+.github/workflows/auto-readme.yml
+  1f0c3ee75e651849 1-112
+.github/copilot-instructions.md
+  1f0c3ee75e651849 1-39
+.github/prompts/summarize-changes.prompt.md
+  1f0c3ee75e651849 7-31
+.github/prompts/generate-change-readme.prompt.md
+  1f0c3ee75e651849 9-66
+.vscode/skills/readme-changelog-generator/SKILL.md
+  1f0c3ee75e651849 1-98
+README.md
+  1f0c3ee75e651849 2-87
+CHANGELOG.md
+  1f0c3ee75e651849 1-18
+.github/instructions/readme-update.instructions.md
+  1f0c3ee75e651849 1-24
+.github/prompts/generate-full-readme.prompt.md
+  1f0c3ee75e651849 1-39
+.github/instructions/changelog-format.instructions.md
+  1f0c3ee75e651849 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.1",
+  "base_commit_sha": "1d930f139f1fe6cff2048de4b4daf44d589b0bd1",
+  "prompts": {
+    "1f0c3ee75e651849": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "d3ea0007-b70d-497f-ba5d-11ceb3980851",
+        "model": "copilot/claude-opus-4.6-fast"
+      },
+      "human_author": "dc995 <dc995@hotmail.com>",
+      "messages": [],
+      "total_additions": 546,
+      "total_deletions": 5,
+      "accepted_lines": 526,
+      "overriden_lines": 0
+    }
+  }
+}
