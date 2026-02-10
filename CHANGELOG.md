@@ -1,35 +1,36 @@
 # Changelog
 
 
-## [2026-02-10] — Changes `d47e40b` to `0b1f373`
+## [2026-02-10] — AI Chaos Toolkit + Dad Jokes + Research Docs (`87952b8` to `eb78981`)
+
+### 🆕 New Features
+- **main.py**: Add interactive agent router — CLI entry point for all 6 AI agents.
+- **agents/router.py**: Add agent routing logic for directing queries to the right agent.
+- **agents/chaos_visualizer.py**: Add chaos visualization dashboard agent.
+- **agents/code_reviewer.py**: Add AI-powered code review agent.
+- **agents/commit_whisperer.py**: Add commit narration agent.
+- **agents/repo_copilot.py**: Add repository copilot agent.
+- **agents/sql_generator.py**: Add natural language to SQL generator agent.
+- **prompts/chaos.md**: Add chaos visualizer prompt template.
+- **prompts/code_review.md**: Add code review prompt template.
+- **prompts/sql_generator.md**: Add SQL generation prompt template.
+- **prompts/summarizer.md**: Add summarizer prompt template.
+- **DadJokes/dad_joke_agent.py**: Add Dad Joke Agent — pun-powered AI comedy companion using OpenAI.
+- **DadJokes/README.md**: Add setup and usage guide for the Dad Joke Agent.
 
 ### 📝 Documentation
-- docs: update changelog and README with KnockKnock agent and Nemo README merge
+- **docs/research/3IQ_FRAMEWORK.md**: Add comprehensive analysis of Microsoft's 3IQ unified intelligence framework.
+- **docs/research/AGENT_SWARM_ARCHITECTURE.md**: Add enterprise agent swarm architecture patterns and research.
+- **docs/research/README.md**: Add research index documenting framework principles and architecture.
+- **README.md**: Update swarm inventory with KnockKnock agent and current project structure.
 
-### 📦 Other
-- Merge pull request #5 from lshade/feature/knock-knock
-- Knock Knock Who's There
-- Merge pull request #4 from ZacharyLuz/main
-- 🐠 Merged README: Nemo mascot + auto-doc engine + full swarm guide
-- 🐠 Nemo README — Just keep pushing! Contribution guide for the swarm
-
-<details><summary>Files changed</summary>
-
-```
- CHANGELOG.md                    |  13 +++
- KnockKnock/.env.example         |   2 +
- KnockKnock/.gitignore           |   5 ++
- KnockKnock/README.md            |  58 ++++++++++++
- KnockKnock/knock_knock_agent.py |  88 ++++++++++++++++++
- KnockKnock/requirements.txt     |   2 +
- README.md                       | 191 +++++++++++++++++++++++++++++-----------
- 7 files changed, 306 insertions(+), 53 deletions(-)
-```
-</details>
+### ⚙️ Configuration
+- **config.py**: Add shared Azure OpenAI config with credential loading from .env.
+- **requirements.txt**: Add root dependencies (openai, python-dotenv, rich).
+- **.env.example**: Add API key template for Azure OpenAI.
+- **.gitignore**: Add additional ignore rules.
 
 ---
-
-
 
 ## [2026-02-10] — Knock Knock + Nemo README (`711526e` to `978201f`)
 

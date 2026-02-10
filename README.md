@@ -1,55 +1,18 @@
-# 🐠 All the Vibes Agent Swarm 🐠
+# 🌀 AlltheVibes — Wild Hackathon 🚀
 
-```
-                                        ,.
-                                      ,o'
-                                     :o'
-                 _....._            ``::o
-               .'       ``-.         `':oo
-              /   __       `.        ::oo'
-             |   /  \        |      ::ooo
-             |   `._;        |     ::ooo'
-             \     ;  ,.     /    ::ooo;
-              `.   ``'  `. .'   ,::ooo;
-         _      ``--.....::'   ::ooooo;
-       .` `.             `.  ,::ooooo;
-      /     `.             `::ooooooo;
-     :        `.            `::oooooo;
-     ;     `:  `._     _..-- ::ooooo;
-     :      `. `-.`_.-'   /  ::ooo;'
-      `.     :`..__  _.-'   ,::o;``
-        `.  ;    ``-'      ,::;``
-          `-.             ,:;``
-             `-.        .:'
-                `-.   .-'
-        _._      ) .-'
-      .'   ``--.'  /
-     /             /
-    ;  JUST KEEP  ;
-    |  PUSHING!   |
-    ;             ;
-     `.         .'
-       `-.__.-'
+A chaotic AI hackathon project combining an agent swarm toolkit, joke bots, vibe oracles, and an automated documentation engine — all powered by vibes.
 
-        🐠  "Just keep pushing, just keep pushing..."  🐠
-             — Nemo (probably), Agent Swarm Edition
-```
+## 🔮 What's in the Swarm
 
-> An automated documentation engine + chaotic agent swarm toolkit — powered by GitHub Copilot skills, prompts, and GitHub Actions.
-
----
-
-## What is the All the Vibes Agent Swarm?
-
-This is a **collaborative, rapid-fire AI hackathon repo** where everyone contributes agents, skills, utilities, and experiments to a shared "agent swarm." There are no rules — just vibes.
-
-The repo includes:
-- **An automated documentation engine** that keeps README and CHANGELOG in sync on every push
-- **A Copilot skill** that teaches Copilot how to analyze diffs and write changelogs
-- **Fun swarm tools** like the Vibe Oracle and ASCII Swarm Mascot
-- Whatever else the swarm decides to build
-
----
+| Agent | Author | Description | Run it |
+|---|---|---|---|
+| 🌀 AI Chaos Agent Toolkit | MarziZadeh | 6 AI agents + prompt playground (code reviewer, SQL generator, chaos visualizer, commit whisperer, repo copilot, router) | `python main.py` |
+| 🔮 Vibe Oracle | ZacharyLuz | Chaotic vibe generator — ask it anything, receive cosmic wisdom | `python vibe_oracle.py "your question"` |
+| 🐝 Swarm Mascot | ZacharyLuz | ASCII art mascot + banner for the swarm | `python swarm_mascot.py` |
+| 🚪 Knock Knock Agent | lshade | AI agent that answers everything with knock-knock jokes | `cd KnockKnock && python knock_knock_agent.py` |
+| 👨 Dad Joke Agent | lshade | AI agent that answers everything with dad jokes | `cd DadJokes && python dad_joke_agent.py` |
+| 📝 Auto-Changelog Engine | dc995 | Copilot skill + GitHub Action that auto-generates CHANGELOG.md on every push | Automatic on push to `main` |
+| 📚 Research Docs | gabland-msft | 3IQ Framework + Agent Swarm Architecture research | See `docs/research/` |
 
 ## Quick Start
 
@@ -58,121 +21,98 @@ The repo includes:
 git clone https://github.com/shyamsridhar123/AlltheVibes-WildHackathon.git
 cd AlltheVibes-WildHackathon
 
-# See the swarm mascot
-python swarm_mascot.py
+# Install dependencies
+pip install -r requirements.txt
 
-# Consult the Vibe Oracle
+# Run the interactive agent router (Chaos Toolkit)
+python main.py
+
+# Or run individual tools
 python vibe_oracle.py "what should I build?"
-
-# Make changes, push, repeat every 5 minutes 🐠
+python swarm_mascot.py
+cd KnockKnock && python knock_knock_agent.py
+cd DadJokes && python dad_joke_agent.py
 ```
 
----
-
-## 🔮 What's in the Swarm
-
-| Contribution | Author | Description | Run it |
-|---|---|---|---|
-| 📝 Auto-Changelog Engine | dc995 | Copilot skill + GitHub Action that auto-generates CHANGELOG.md on every push | Automatic on push to `main` |
-| 🔮 Vibe Oracle | ZacharyLuz | Chaotic vibe generator — ask it anything, receive cosmic wisdom | `python vibe_oracle.py "your question"` |
-| 🐝 Swarm Mascot | ZacharyLuz | ASCII art mascot + banner for the swarm | `python swarm_mascot.py` |
-| 🐠 Nemo README | ZacharyLuz | This README with Nemo ASCII art and contribution guide | You're reading it |
-| 🚪 Knock Knock Agent | lshade | AI agent that answers everything with knock-knock jokes (OpenAI-powered) | `cd KnockKnock && python knock_knock_agent.py` |
-
----
-
-## How the Auto-Documentation Works
-
-### Copilot Skill
-The skill in `.vscode/skills/readme-changelog-generator/SKILL.md` teaches Copilot how to:
-- Analyze git diffs and commit messages
-- Classify changes into categories (Features, Fixes, Refactors, etc.)
-- Generate structured changelog entries
-- Update the README
-
-### Prompts
-| Prompt | What It Does |
-|--------|-------------|
-| `generate-change-readme` | Analyzes recent commits and generates a changelog entry |
-| `summarize-changes` | Finds all changes since the last changelog entry |
-| `generate-full-readme` | Creates a complete README from the current repo state |
-
-### GitHub Action
-On every push to `main`, the workflow:
-1. Reads the commit messages and diff
-2. Categorizes changes using conventional commit prefixes
-3. Generates a changelog entry with date and commit range
-4. Prepends it to `CHANGELOG.md`
-5. Commits and pushes the update
-
----
+### Environment Setup (for AI agents)
+```bash
+cp .env.example .env
+# Edit .env with your Azure OpenAI or OpenAI API keys
+```
 
 ## Project Structure
 
 ```
 AlltheVibes-WildHackathon/
+├── main.py                                  # 🌀 Interactive agent router
+├── config.py                                # Shared Azure OpenAI config
+├── requirements.txt                         # Root dependencies
+├── .env.example                             # API key template
+├── agents/                                  # 🤖 AI Chaos Agent Toolkit
+│   ├── router.py                            # Agent routing logic
+│   ├── chaos_visualizer.py                  # Chaos visualization dashboard
+│   ├── code_reviewer.py                     # AI code reviewer
+│   ├── commit_whisperer.py                  # Commit narration agent
+│   ├── repo_copilot.py                      # Repository copilot
+│   └── sql_generator.py                     # Natural language → SQL
+├── prompts/                                 # 📋 Agent prompt templates
+│   ├── chaos.md                             # Chaos visualizer prompts
+│   ├── code_review.md                       # Code review prompts
+│   ├── sql_generator.md                     # SQL generation prompts
+│   └── summarizer.md                        # Summarizer prompts
+├── KnockKnock/                              # 🚪 Knock-knock joke agent
+│   ├── knock_knock_agent.py                 # OpenAI-powered joke agent
+│   └── README.md                            # Setup guide
+├── DadJokes/                                # 👨 Dad joke agent
+│   ├── dad_joke_agent.py                    # OpenAI-powered dad jokes
+│   └── README.md                            # Setup guide
+├── docs/research/                           # 📚 Research documentation
+│   ├── 3IQ_FRAMEWORK.md                     # Microsoft 3IQ framework analysis
+│   ├── AGENT_SWARM_ARCHITECTURE.md          # Enterprise agent swarm patterns
+│   └── README.md                            # Research index
 ├── .github/
 │   ├── copilot-instructions.md              # Global Copilot behavior rules
-│   ├── instructions/
-│   │   ├── changelog-format.instructions.md # Changelog formatting rules
-│   │   └── readme-update.instructions.md    # README update rules
-│   ├── prompts/
-│   │   ├── generate-change-readme.prompt.md # Generate changelog from changes
-│   │   ├── generate-full-readme.prompt.md   # Generate a full README
-│   │   └── summarize-changes.prompt.md      # Summarize changes since last entry
-│   └── workflows/
-│       └── auto-readme.yml                  # GitHub Action for auto-changelog
-├── .vscode/
-│   └── skills/
-│       └── readme-changelog-generator/
-│           └── SKILL.md                     # Copilot skill definition
-├── KnockKnock/                               # 🚪 Knock-knock joke agent
-│   ├── knock_knock_agent.py                 # OpenAI-powered joke agent
-│   ├── requirements.txt                     # Python dependencies
-│   ├── .env.example                         # API key template
-│   └── README.md                            # Agent setup guide
+│   ├── instructions/                        # Context-specific Copilot rules
+│   ├── prompts/                             # Copilot prompt templates
+│   └── workflows/auto-readme.yml            # Auto-changelog GitHub Action
+├── .vscode/skills/                          # Copilot skill definitions
+├── vibe_oracle.py                           # 🔮 Chaotic vibe generator
+├── swarm_mascot.py                          # 🐝 ASCII art swarm mascot
 ├── CHANGELOG.md                             # Auto-generated changelog
-├── README.md                                # This file (you are here 🐠)
-├── swarm_mascot.py                          # ASCII swarm mascot
-└── vibe_oracle.py                           # Chaotic vibe generator
+└── README.md                                # This file
 ```
 
----
+## How the Auto-Documentation Works
 
-## How to Contribute
+On every push to `main`, a GitHub Action + Copilot skill automatically:
+1. Reads commit messages and diffs
+2. Categorizes changes (Features, Fixes, Refactors, Config, Breaking Changes)
+3. Generates a structured changelog entry
+4. Prepends it to `CHANGELOG.md`
 
-### 1. Get the repo
-```bash
-git clone https://github.com/shyamsridhar123/AlltheVibes-WildHackathon.git
-```
-Or fork it: `gh repo fork shyamsridhar123/AlltheVibes-WildHackathon --clone`
-
-### 2. Build anything
-- ✅ Agents, skills, utilities, experiments, partial ideas, vibes
-- ❌ Nothing is off limits. No required tech stack or language.
-
-### 3. Push fast
-> **Push something every ~5 minutes.** Speed over polish.
-
-### 4. Push or PR
-- **Direct push** to `main` if you have access (no branch protection)
-- **Fork + PR** if you don't — Copilot auto-approves
-
-### 5. Don't overthink it
-No coding standards. No linting rules. No cleanup expectations. Just vibes.
-
----
+You can also run the `generate-change-readme` Copilot prompt manually.
 
 ## Recent Changes
 
-See [CHANGELOG.md](CHANGELOG.md) for a full history of changes.
+See [CHANGELOG.md](CHANGELOG.md) for the full auto-generated history.
+
+## Contributing
+
+1. Fork or clone the repo
+2. Build anything — agents, skills, utilities, experiments, vibes
+3. Use [Conventional Commits](https://www.conventionalcommits.org/): `feat:`, `fix:`, `docs:`, etc.
+4. Push fast — speed over polish 🚀
+5. The auto-changelog will document everything
+
+## Team
+
+- @shyamsridhar123
+- @gabland-msft
+- @ZacharyLuz
+- @lshade
+- @MarziZadeh
+- @dc995
 
 ## License
 
-MIT
-
----
-
-```
-   🐠 Just keep pushing. Just keep pushing. 🐠
-```
+MIT License — Built with ❤️ during Wild Hackathon
