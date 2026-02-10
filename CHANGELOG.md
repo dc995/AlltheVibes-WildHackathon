@@ -1,6 +1,30 @@
 # Changelog
 
 
+## [2026-02-10] — Changes `697d4b0` to `520f59f`
+
+### 🆕 New Features
+- feat: add Dad Joke Agent - pun-powered AI comedy companion
+
+### 📦 Other
+- Merge pull request #11 from lshade/feature/knock-knock
+
+<details><summary>Files changed</summary>
+
+```
+ DadJokes/.env.example      |  2 ++
+ DadJokes/README.md         | 65 ++++++++++++++++++++++++++++++++++
+ DadJokes/dad_joke_agent.py | 88 ++++++++++++++++++++++++++++++++++++++++++++++
+ DadJokes/requirements.txt  |  2 ++
+ 4 files changed, 157 insertions(+)
+```
+</details>
+
+---
+
+
+
+
 ## [2026-02-10] — Changes `89af5f0` to `e1a3f6c`
 
 ### 🆕 New Features
