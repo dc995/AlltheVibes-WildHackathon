@@ -11,6 +11,18 @@
 ### 📝 Documentation
 - **README.md**: Major rewrite with Nemo ASCII art mascot, contribution guide, swarm table, and consolidated project documentation (PR #4 by ZacharyLuz).
 
+<details><summary>Files changed</summary>
+
+```
+ KnockKnock/.env.example         |  2 +
+ KnockKnock/.gitignore           |  5 +++
+ KnockKnock/README.md            | 58 +++++++++++++++++++++++++++
+ KnockKnock/knock_knock_agent.py | 88 +++++++++++++++++++++++++++++++++++++++++
+ KnockKnock/requirements.txt     |  2 +
+ 5 files changed, 155 insertions(+)
+```
+</details>
+
 ---
 
 ## [2026-02-10] — Swarm awakens (`a5885fd` to `b3855fc`)
