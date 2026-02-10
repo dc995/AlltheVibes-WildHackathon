@@ -12,6 +12,23 @@
 ### 📝 Documentation
 - **README.md**: Merge PR #2 adding the changelog generator skill, prompts, instructions, and CI workflow.
 
+<details><summary>Files changed in PR #2</summary>
+
+```
+ .github/copilot-instructions.md                    |  39 +++++++
+ .../instructions/changelog-format.instructions.md  |  27 +++++
+ .github/instructions/readme-update.instructions.md |  24 +++++
+ .github/prompts/generate-change-readme.prompt.md   |  66 ++++++++++++
+ .github/prompts/generate-full-readme.prompt.md     |  39 +++++++
+ .github/prompts/summarize-changes.prompt.md        |  31 ++++++
+ .github/workflows/auto-readme.yml                  | 112 +++++++++++++++++++++
+ .vscode/skills/readme-changelog-generator/SKILL.md |  98 ++++++++++++++++++
+ CHANGELOG.md                                       |  18 ++++
+ README.md                                          |  86 ++++++++++++++++
+ 10 files changed, 540 insertions(+)
+```
+</details>
+
 ---
 
 ## [2026-02-10] — Initial setup
