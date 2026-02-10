@@ -94,7 +94,7 @@ You can also run the `generate-change-readme` Copilot prompt manually.
 
 ## Recent Changes
 
-See [CHANGELOG.md](CHANGELOG.md) for the full auto-generated history.
+See [CHANGELOG.md](CHANGELOG.md) for a full history of changes.
 
 ## Contributing
 

@@ -1,6 +1,63 @@
 # Changelog
 
 
+## [2026-02-10] — Changes `eb076e5` to `71e9562`
+
+### 🆕 New Features
+- feat: add Dad Joke Agent - pun-powered AI comedy companion
+- feat: add AI Chaos Agent Toolkit - 6 agents + prompt playground
+
+### 📝 Documentation
+- docs: update changelog and README with AI Chaos Toolkit, Dad Jokes, and research docs
+- docs: auto-update changelog and readme [skip ci]
+- docs: enhance README with setup and usage instructions
+- docs: auto-update changelog and readme [skip ci]
+- docs: add 3IQ framework and agent swarm architecture research
+- docs: update swarm inventory — add KnockKnock agent + update project structure
+
+### 📦 Other
+- Merge pull request #11 from lshade/feature/knock-knock
+- Merge pull request #8 from MarziZadeh/feature/marzi
+- Merge pull request #9 from gabland-msft/feature/add-research-docs
+- Merge pull request #7 from ZacharyLuz/main
+
+<details><summary>Files changed</summary>
+
+```
+ .env.example                              |   4 +
+ .gitignore                                |   3 +
+ CHANGELOG.md                              |  49 +--
+ DadJokes/.env.example                     |   2 +
+ DadJokes/README.md                        |  65 ++++
+ DadJokes/dad_joke_agent.py                |  88 ++++++
+ DadJokes/requirements.txt                 |   2 +
+ README.md                                 | 224 +++++--------
+ agents/__init__.py                        |   1 +
+ agents/chaos_visualizer.py                | 126 ++++++++
+ agents/code_reviewer.py                   |  97 ++++++
+ agents/commit_whisperer.py                |  84 +++++
+ agents/repo_copilot.py                    | 121 ++++++++
+ agents/router.py                          | 114 +++++++
+ agents/sql_generator.py                   |  83 +++++
+ config.py                                 |  34 ++
+ docs/research/3IQ_FRAMEWORK.md            | 418 +++++++++++++++++++++++++
+ docs/research/AGENT_SWARM_ARCHITECTURE.md | 500 ++++++++++++++++++++++++++++++
+ docs/research/README.md                   | 165 ++++++++++
+ main.py                                   |  92 ++++++
+ prompts/chaos.md                          |  24 ++
+ prompts/code_review.md                    |  20 ++
+ prompts/sql_generator.md                  |  23 ++
+ prompts/summarizer.md                     |  20 ++
+ requirements.txt                          |   3 +
+ 25 files changed, 2196 insertions(+), 166 deletions(-)
+```
+</details>
+
+---
+
+
+
+
 ## [2026-02-10] — AI Chaos Toolkit + Dad Jokes + Research Docs (`87952b8` to `eb78981`)
 
 ### 🆕 New Features
