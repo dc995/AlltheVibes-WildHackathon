@@ -1,0 +1,25 @@
+README.md
+  1f0c3ee75e651849 168
+CHANGELOG.md
+  1f0c3ee75e651849 14-25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.1",
+  "base_commit_sha": "9444e95b872597cb309ccfdd56f23dd6fb422706",
+  "prompts": {
+    "1f0c3ee75e651849": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "d3ea0007-b70d-497f-ba5d-11ceb3980851",
+        "model": "copilot/claude-opus-4.6-fast"
+      },
+      "human_author": "dc995 <dc995@hotmail.com>",
+      "messages": [],
+      "total_additions": 252,
+      "total_deletions": 242,
+      "accepted_lines": 108,
+      "overriden_lines": 0
+    }
+  }
+}
