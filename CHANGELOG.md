@@ -1,6 +1,42 @@
 # Changelog
 
 
+## [2026-02-10] — Changes `89af5f0` to `e1a3f6c`
+
+### 🆕 New Features
+- feat: add AI Chaos Agent Toolkit - 6 agents + prompt playground
+
+### 📦 Other
+- Merge pull request #8 from MarziZadeh/feature/marzi
+
+<details><summary>Files changed</summary>
+
+```
+ .env.example               |   4 ++
+ .gitignore                 |   3 ++
+ agents/__init__.py         |   1 +
+ agents/chaos_visualizer.py | 126 +++++++++++++++++++++++++++++++++++++++++++++
+ agents/code_reviewer.py    |  97 ++++++++++++++++++++++++++++++++++
+ agents/commit_whisperer.py |  84 ++++++++++++++++++++++++++++++
+ agents/repo_copilot.py     | 121 +++++++++++++++++++++++++++++++++++++++++++
+ agents/router.py           | 114 ++++++++++++++++++++++++++++++++++++++++
+ agents/sql_generator.py    |  83 +++++++++++++++++++++++++++++
+ config.py                  |  34 ++++++++++++
+ main.py                    |  92 +++++++++++++++++++++++++++++++++
+ prompts/chaos.md           |  24 +++++++++
+ prompts/code_review.md     |  20 +++++++
+ prompts/sql_generator.md   |  23 +++++++++
+ prompts/summarizer.md      |  20 +++++++
+ requirements.txt           |   3 ++
+ 16 files changed, 849 insertions(+)
+```
+</details>
+
+---
+
+
+
+
 ## [2026-02-10] — Changes `9ec00ba` to `978201f`
 
 ### 📦 Other
