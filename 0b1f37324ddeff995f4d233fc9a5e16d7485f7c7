@@ -1,0 +1,33 @@
+KnockKnock/.gitignore
+  1f0c3ee75e651849 1-5
+KnockKnock/README.md
+  1f0c3ee75e651849 1-58
+KnockKnock/.env.example
+  1f0c3ee75e651849 1-2
+KnockKnock/requirements.txt
+  1f0c3ee75e651849 1-2
+README.md
+  1f0c3ee75e651849 1,3-52,56-59,61-62,64-65,67-99,105-108,129-133,135-137,140,142,144-148,150-152,154-155,157-162,164-166,168,170,175-180
+KnockKnock/knock_knock_agent.py
+  1f0c3ee75e651849 1-88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.1",
+  "base_commit_sha": "0b1f37324ddeff995f4d233fc9a5e16d7485f7c7",
+  "prompts": {
+    "1f0c3ee75e651849": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "d3ea0007-b70d-497f-ba5d-11ceb3980851",
+        "model": "copilot/claude-opus-4.6-fast"
+      },
+      "human_author": "dc995 <dc995@hotmail.com>",
+      "messages": [],
+      "total_additions": 375,
+      "total_deletions": 135,
+      "accepted_lines": 314,
+      "overriden_lines": 0
+    }
+  }
+}
