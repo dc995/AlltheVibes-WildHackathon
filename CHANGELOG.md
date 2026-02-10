@@ -1,5 +1,36 @@
 # Changelog
 
+
+## [2026-02-10] — Changes `d47e40b` to `0b1f373`
+
+### 📝 Documentation
+- docs: update changelog and README with KnockKnock agent and Nemo README merge
+
+### 📦 Other
+- Merge pull request #5 from lshade/feature/knock-knock
+- Knock Knock Who's There
+- Merge pull request #4 from ZacharyLuz/main
+- 🐠 Merged README: Nemo mascot + auto-doc engine + full swarm guide
+- 🐠 Nemo README — Just keep pushing! Contribution guide for the swarm
+
+<details><summary>Files changed</summary>
+
+```
+ CHANGELOG.md                    |  13 +++
+ KnockKnock/.env.example         |   2 +
+ KnockKnock/.gitignore           |   5 ++
+ KnockKnock/README.md            |  58 ++++++++++++
+ KnockKnock/knock_knock_agent.py |  88 ++++++++++++++++++
+ KnockKnock/requirements.txt     |   2 +
+ README.md                       | 191 +++++++++++++++++++++++++++++-----------
+ 7 files changed, 306 insertions(+), 53 deletions(-)
+```
+</details>
+
+---
+
+
+
 ## [2026-02-10] — Knock Knock + Nemo README (`711526e` to `978201f`)
 
 ### 🆕 New Features
