@@ -1,5 +1,18 @@
 # Changelog
 
+## [2026-02-10] — Knock Knock + Nemo README (`711526e` to `978201f`)
+
+### 🆕 New Features
+- **KnockKnock/knock_knock_agent.py**: Add AI-powered knock-knock joke agent using OpenAI API. Every response is a knock-knock joke.
+- **KnockKnock/requirements.txt**: Add dependencies (openai, python-dotenv).
+- **KnockKnock/.env.example**: Add API key template for agent configuration.
+- **KnockKnock/README.md**: Add setup guide and usage instructions for the knock-knock agent.
+
+### 📝 Documentation
+- **README.md**: Major rewrite with Nemo ASCII art mascot, contribution guide, swarm table, and consolidated project documentation (PR #4 by ZacharyLuz).
+
+---
+
 ## [2026-02-10] — Swarm awakens (`a5885fd` to `b3855fc`)
 
 ### 🆕 New Features
