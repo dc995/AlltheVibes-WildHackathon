@@ -1,6 +1,6 @@
 # AlltheVibes-WildHackathon
 
-Automated documentation engine that keeps your README and CHANGELOG in sync with every change in the repo — powered by GitHub Copilot skills, prompts, and GitHub Actions.
+🐝 **The All the Vibes Agent Swarm** — A chaotic hackathon project featuring a Vibe Oracle, ASCII swarm mascot, and an automated documentation engine that keeps your README and CHANGELOG in sync with every change.
 
 ## Quick Start
 
@@ -10,35 +10,43 @@ Automated documentation engine that keeps your README and CHANGELOG in sync with
    cd AlltheVibes-WildHackathon
    ```
 
-2. **Make changes** to any file in the repo.
+2. **Consult the Vibe Oracle:**
+   ```bash
+   python vibe_oracle.py "will my PR get approved?"
+   ```
 
-3. **Generate documentation** using one of these methods:
+3. **Summon the Swarm Mascot:**
+   ```bash
+   python swarm_mascot.py
+   ```
 
-   - **Copilot Prompt (recommended):** Open the command palette, run the `generate-change-readme` prompt, and Copilot will analyze your changes and update the changelog.
-   
-   - **Automatic (on push):** Push to `main` and the GitHub Action will auto-generate a changelog entry.
+4. **Generate documentation** after making changes:
+   - **Copilot Prompt (recommended):** Run the `generate-change-readme` prompt.
+   - **Automatic (on push):** Push to `main` and the GitHub Action auto-generates a changelog entry.
 
 ## Project Structure
 
 ```
 AlltheVibes-WildHackathon/
+├── vibe_oracle.py                           # 🔮 Chaotic vibe generator
+├── swarm_mascot.py                          # 🐝 ASCII art swarm mascot
 ├── .github/
-│   ├── copilot-instructions.md          # Global Copilot behavior rules
+│   ├── copilot-instructions.md              # Global Copilot behavior rules
 │   ├── instructions/
-│   │   ├── changelog-format.instructions.md  # Changelog formatting rules
-│   │   └── readme-update.instructions.md     # README update rules
+│   │   ├── changelog-format.instructions.md # Changelog formatting rules
+│   │   └── readme-update.instructions.md    # README update rules
 │   ├── prompts/
-│   │   ├── generate-change-readme.prompt.md  # Generate changelog from changes
-│   │   ├── generate-full-readme.prompt.md    # Generate a full README
-│   │   └── summarize-changes.prompt.md       # Summarize changes since last entry
+│   │   ├── generate-change-readme.prompt.md # Generate changelog from changes
+│   │   ├── generate-full-readme.prompt.md   # Generate a full README
+│   │   └── summarize-changes.prompt.md      # Summarize changes since last entry
 │   └── workflows/
-│       └── auto-readme.yml                   # GitHub Action for auto-changelog
+│       └── auto-readme.yml                  # GitHub Action for auto-changelog
 ├── .vscode/
 │   └── skills/
 │       └── readme-changelog-generator/
-│           └── SKILL.md                      # Copilot skill definition
-├── CHANGELOG.md                              # Auto-generated changelog
-└── README.md                                 # This file
+│           └── SKILL.md                     # Copilot skill definition
+├── CHANGELOG.md                             # Auto-generated changelog
+└── README.md                                # This file
 ```
 
 ## How It Works
